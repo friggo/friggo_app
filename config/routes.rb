@@ -1,4 +1,6 @@
-SampleApp::Application.routes.draw do
+FriggoApp::Application.routes.draw do
+  devise_for :users, path_names: {sign_in: "login", sign_out: "logout"}
+
   get "users/new" 
 
   root :to => 'static_pages#home'
