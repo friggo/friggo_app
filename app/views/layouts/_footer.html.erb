@@ -1,13 +1,38 @@
 <footer class="footer">
-  <small>
-    <a href="http://railstutorial.org/">Rails Tutorial</a>
-    by Michael Hartl
-  </small>
   <nav>
-    <ul>
-      <li><%= link_to "About",   about_path %></li>
-      <li><%= link_to "Contact", contact_path %></li>
-      <li><a href="http://news.railstutorial.org/">News</a></li>
-    </ul>
+    <div class="row">
+        <div class="span3">
+            <ul>
+                <h5> <center>About Us</center></h5>
+                <li><%= link_to "What is Freego?",   about_path %></li> <br>
+                <li><%= link_to "Terms of use", contact_path %></li> <br>
+                <li><%= link_to "Privacy", contact_path %></li> <br>
+                <li><%= link_to "How it works", contact_path %></li> <br>
+            </ul>
+        </div>
+        <div class="span3">
+            <ul>
+                <h5> <center>Learn More</center> </h5>
+                <li><%= link_to "FAQ",   about_path %></li> <br>
+                <li><%= link_to "Be an artist", contact_path %></li> <br>
+                <li><%= link_to "Tutorials", contact_path %></li> <br>
+            </ul>
+        </div>
+        <div class="span3">
+            <ul>
+                <h5> <center>Follow Us</center></h5>
+                <li><%= link_to "Blog",   about_path %></li> <br>
+                <li><%= link_to "Newsletter", contact_path %></li> <br>
+                <li><%= link_to "Facebook", contact_path %></li> <br>
+                <li><%= link_to "Google+", contact_path %></li> <br>
+                <li><%= link_to "Twitter", contact_path %></li>
+            </ul>
+        </div>
+        <div class="span3">
+            <ul>
+                <h5> <center>Support</center> </h5>
+                <li><%= link_to "Contact Us",   about_path %></li>
+            </ul>
+        </div>
   </nav>
 </footer>
