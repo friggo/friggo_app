@@ -1,14 +1,17 @@
 FriggoApp::Application.routes.draw do
+  
   devise_for :users, path_names: {sign_in: "login", sign_out: "logout"}
 
-  get "users/new" 
-
-  root :to => 'static_pages#home'
+  # Adding a Users resource to the routes file. 
+  resources :users
+  
+  root to: 'static_pages#home'
 
   match '/help',    to: 'static_pages#help'
   match '/about',   to: 'static_pages#about'
   match '/contact', to: 'static_pages#contact'
   match '/signup',  to: 'users#new'
+  match '/products',  to: 'users#products'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
