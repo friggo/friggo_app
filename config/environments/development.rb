@@ -36,4 +36,7 @@ FriggoApp::Application.configure do
   config.assets.debug = true
 
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+  ENV["APP_ID"] = "337616376338419"
+  ENV["APP_SECRET"] = "64c75c53e2d231c9f6586220de2df850"
 end
