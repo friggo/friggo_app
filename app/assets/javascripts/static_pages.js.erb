@@ -1,11 +1,13 @@
 $(document).ready(function() {
-	$("#start_selling").click(function(){	
-		$("#start_selling").html("<center id='signup_mail'><button class='btn btn-success btn-large'><i class='icon-white icon-envelope'></i> Sign up with email</button></center><br><center><button class='btn btn-primary btn-large'><i class='icon-white icon-user'></i> Sign up with Facebook</button></center>");
-	});
+    $("#start_selling").click(function(){
+        $("#start_selling").css('visibility','hidden').remove();
+        $("#email_register").css('visibility','visible');
+        $("#facebook_register").css('visibility','visible');
+    });
 });
 
-// $(document).ready(function() {
-// 	$("#signup_mail").click(function(){	
-// 		$("#signup_mail").html("<center><button class='btn btn-primary btn-large' style='hidden'><i class='icon-white icon-user'></i> Sign up with Facebook</button></center>");
-// 	});
-// });
+//$(document).ready(function() {
+//	$("#start_selling").click(function(){
+//		$("#start_selling").html("<center id='signup_mail'><button class='btn btn-success btn-large'><i class='icon-white icon-envelope'></i> Sign up with email</button></center><br><center><button class='btn btn-primary btn-large'><i class='icon-white icon-user'></i> Sign up with Facebook</button></center>");
+//	});
+//});

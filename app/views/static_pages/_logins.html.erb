@@ -1,4 +1,4 @@
 <!-- <center><a href=<%= new_user_registration_path %> class="btn btn-success btn-large"><i class="icon-white icon-envelope"></i> Sign up with email</a></center> -->
 <!-- <a href=<%= user_omniauth_authorize_path(:facebook) %> id=fb-root class="btn btn-primary btn-large"><i class="icon-white icon-user"></i> Sign up with facebook</a> -->
-<center><%= link_to "Sign up with email", new_user_registration_path, { class: "btn btn-success btn-large icon-white icon-envelope" } %></center>
-<center><%= link_to "Sign up with facebook", user_omniauth_authorize_path(:facebook), { class: "btn btn-primary btn-large icon-white icon-user" } %></center>
+<center><%= link_to "Sign up with email", new_user_registration_path, { id: "email_register", class: "btn btn-success btn-large", style: "visibility:hidden"} %></center>
+<center><%= link_to "Sign up with facebook", user_omniauth_authorize_path(:facebook), { id: "facebook_register", class: "btn btn-primary btn-large", style: "visibility:hidden" } %></center>
