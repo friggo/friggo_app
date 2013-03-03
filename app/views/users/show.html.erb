@@ -1,10 +1,19 @@
-<% provide(:title, @user.name) %>
+<% provide(:title, @user.email) %>
 <div class="row">
   <aside class="span4">
     <section>
       <h1>
-        <%= @user.name %>
+        <%= @user.email %>
       </h1>
     </section>
   </aside>
+  <div class="span8">
+    <% if @user.products.any? %>
+      <h3>Products (<%= @user.products.count %>)</h3>
+      <ol class="products">
+        <%= render @products %>
+      </ol>
+      <%= will_paginate @products %>
+    <% end %>
+  </div>
 </div>
