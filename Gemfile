@@ -10,6 +10,7 @@ gem 'jquery-rails', '2.0.2'
 gem 'devise'
 gem 'omniauth'
 gem 'omniauth-facebook'
+gem "paperclip", "~> 3.0"
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'

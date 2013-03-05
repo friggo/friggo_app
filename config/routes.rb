@@ -4,12 +4,14 @@ FriggoApp::Application.routes.draw do
 
   # Adding a Users resource to the routes file. 
   resources :users
+  resources :products, only: [:new, :edit, :create, :destroy, :show]
   
   root to: 'static_pages#home'
 
   match '/help',    to: 'static_pages#help'
   match '/about',   to: 'static_pages#about'
   match '/contact', to: 'static_pages#contact'
+  match '/newProduct', to: 'products#new'
   match '/signup',  to: 'users#new'
   match '/products',  to: 'users#products'
 
