@@ -1,5 +1,5 @@
 <li>
-  <span class="user_id"><%= product.name %></span>
+  <span class="user_id"><%= image_tag product.photo.url %></span>
   <span class="timestamp">
     Posted <%= time_ago_in_words(product.created_at) %> ago.
   </span>

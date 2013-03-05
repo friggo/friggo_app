@@ -1,5 +1,5 @@
 class Product < ActiveRecord::Base
-  attr_accessible :active, :user_id, :description, :file, :name, :price, :quantity_to_sell, :visible , :category_id, :photo
+  attr_accessible :active, :description, :file, :name, :price, :quantity_to_sell, :visible , :category_id, :photo
   belongs_to :user
   
   validates :user_id, presence: true
