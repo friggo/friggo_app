@@ -9,7 +9,9 @@ class Product < ActiveRecord::Base
   validates :price, presence: true
   validates :quantity_to_sell, presence: true
 
-  has_attached_file :photo
+  has_attached_file :photo ,
+                            :url => "/assets/:class/:id/:attachment/:style.:extension",
+                            :path => ":rails_root/public/assets/:class/:id/:attachment/:style.:extension"
   # Order the products in a desc order
   default_scope order: 'products.created_at DESC'
 end

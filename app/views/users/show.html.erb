@@ -10,7 +10,7 @@
   <div class="span12">
     <h1>
       <center 
-        id="start_selling"><button type="button" class="btn btn-large btn-primary" ONCLICK="window.location.href='/newProduct'">Start Selling Now!</button>
+        id="start_selling"><%= button_to "Start selling", '/products/new', :method => "get", :class => "btn btn-large btn-primary" %>
       </center>
     </h1>
   </div>
