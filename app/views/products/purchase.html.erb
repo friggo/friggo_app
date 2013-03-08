@@ -1,0 +1,28 @@
+<li>
+  <span class="user_id"><%= product.name %></span>
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(product.created_at) %> ago.
+  </span>
+</li>
+
+<div >
+    <br><br>
+</div>  
+<div class="row">  
+    <div class="span6">
+        <h1><br><br>Welcome to Friggo</h1>
+
+        <h2>
+            Enabling you to sell your your digital creations <b><u>directly</u></b> to your friends and followers.
+        </h2>
+
+        <center id="start_selling"><button class="btn btn-large btn-primary">Start Selling Now!</button></center>
+        <%= render 'logins'%>
+    </div>
+    <div class="span6">
+        <iframe width="487" height="360" src="https://www.youtube.com/embed/QkNrSpqUr-E?rel=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+<div >
+    <br>
+</div>  

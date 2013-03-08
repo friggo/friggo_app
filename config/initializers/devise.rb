@@ -239,5 +239,5 @@ Devise.setup do |config|
   # config.omniauth_path_prefix = "/my_engine/users/auth"
 
   require "omniauth-facebook"
-  config.omniauth :facebook, ENV["APP_ID"], ENV["APP_SECRET"], :strategy_class => OmniAuth::Strategies::Facebook
+  config.omniauth :facebook, ENV["APP_ID"], ENV["APP_SECRET"]
 end
