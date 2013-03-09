@@ -29,7 +29,10 @@ class UsersController < ApplicationController
   private
 
     def signed_in_user
-      redirect_to signin_url, notice: "Please sign in." unless signed_in?
+      if not signed_in?
+        redirect_to(root_path) 
+        flash[:notice] =  "Please sign in."
+      end
     end
 
     def correct_user
